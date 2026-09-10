@@ -6,7 +6,7 @@ The site is intentionally static so it can be mirrored to the public GitHub Page
 
 ## Screenshots
 
-The product screenshots in `assets/screenshots/` were captured from the official Immich Demo server (`https://demo.immich.app`) and show real ImmiMate workflows. They are not mock-server screenshots and contain no demo credentials.
+The gallery uses imagery from the official Immich Demo server (`https://demo.immich.app`) together with current release-build captures for the account menu and Pro entry-point layout. The release-build captures use redacted fixture account data; no credentials or private photos are included.
 
 ## Local preview
 
