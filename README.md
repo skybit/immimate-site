@@ -6,7 +6,7 @@ The site is intentionally static so it can be mirrored to the public GitHub Page
 
 ## Screenshots
 
-The gallery uses imagery from the official Immich Demo server (`https://demo.immich.app`) together with current release-build captures for the account menu and Pro entry-point layout. The release-build captures use redacted fixture account data; no credentials or private photos are included.
+The gallery contains ten current macOS Release-build captures from the official Immich Demo server (`https://demo.immich.app`). The capture contract and repeatable Appium workflow live in [`docs/qa/official-demo-marketing-screenshot-capture.md`](../docs/qa/official-demo-marketing-screenshot-capture.md); no credentials are committed.
 
 ## Local preview
 
