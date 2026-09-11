@@ -128,8 +128,6 @@ h1 em { color: var(--blue); font-style: normal; }
 .shot figcaption span { grid-row: span 2; color: var(--blue); font-size: 0.68rem; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase; }
 .shot figcaption strong { font-size: 1.03rem; letter-spacing: -0.02em; }
 .shot figcaption small { margin-top: 3px; color: var(--muted); font-size: 0.82rem; }
-.source-note { display: flex; align-items: center; gap: 8px; margin: 46px 0 0; color: var(--muted); font-size: 0.79rem; }
-.source-note span { color: var(--orange); }
 
 .privacy-section { color: #fff; background: var(--navy); }
 .privacy-grid { display: grid; grid-template-columns: 0.95fr 0.8fr; gap: 100px; align-items: center; }
