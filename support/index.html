@@ -4,19 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f7f8fb">
-    <meta name="description" content="Get help with ImmiMate for macOS and self-hosted Immich servers.">
-    <title>Support — ImmiMate</title>
+    <meta name="description" content="Get help with ImmiMate for macOS and self-hosted Immich servers." data-i18n="support.meta.description" data-i18n-attr="content">
+    <title data-i18n="support.meta.title">Support — ImmiMate</title>
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../assets/i18n.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="wrap nav">
-        <a class="brand" href="../" aria-label="ImmiMate home"><img src="../assets/app-icon.png" alt="" width="34" height="34"><span>ImmiMate</span></a>
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a href="../#features">Product</a>
-          <a href="../#screenshots">Screenshots</a>
-          <a href="../privacy/">Privacy</a>
+        <a class="brand" href="../" aria-label="ImmiMate home" data-i18n="common.home.aria" data-i18n-attr="aria-label"><img src="../assets/app-icon.png" alt="" width="34" height="34"><span>ImmiMate</span></a>
+        <nav class="nav-links" aria-label="Primary navigation" data-i18n="common.nav.primary" data-i18n-attr="aria-label">
+          <a href="../#features" data-i18n="common.nav.product">Product</a>
+          <a href="../#screenshots" data-i18n="common.nav.screenshots">Screenshots</a>
+          <a href="../privacy/" data-i18n="common.nav.privacy">Privacy</a>
         </nav>
       </div>
     </header>
@@ -24,39 +25,39 @@
     <main>
       <section class="page-hero">
         <div class="wrap">
-          <p class="kicker"><span class="kicker-mark"></span> Help center</p>
-          <h1>Support that starts with the right details.</h1>
-          <p class="lead">Most connection issues come down to the server URL, network reachability, or account permissions. Here is the shortest path to a useful answer.</p>
+          <p class="kicker"><span class="kicker-mark"></span> <span data-i18n="support.hero.kicker">Help center</span></p>
+          <h1 data-i18n="support.hero.title">Support that starts with the right details.</h1>
+          <p class="lead" data-i18n="support.hero.lead">Most connection issues come down to the server URL, network reachability, or account permissions. Here is the shortest path to a useful answer.</p>
           <div class="article-actions">
-            <a class="button" href="https://github.com/skybit/immimate-site/issues">Open a support issue <span aria-hidden="true">→</span></a>
-            <a class="button button-secondary" href="../privacy/">Privacy policy</a>
+            <a class="button" href="https://github.com/skybit/immimate-site/issues"><span data-i18n="support.hero.issue">Open a support issue</span> <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="../privacy/" data-i18n="support.hero.privacy">Privacy policy</a>
           </div>
         </div>
       </section>
       <section class="article-section">
         <div class="wrap">
           <article class="article">
-            <h2>Before opening an issue</h2>
+            <h2 data-i18n="support.before.title">Before opening an issue</h2>
             <ol>
-              <li>Confirm that the Immich server URL opens in a browser on the same Mac.</li>
-              <li>Use the complete server origin, including <code>https://</code> when TLS is configured.</li>
-              <li>Check that the Immich account can sign in and that the server is reachable from the current network.</li>
-              <li>Update ImmiMate and Immich before reporting a compatibility problem.</li>
+              <li data-i18n="support.before.item.url">Confirm that the Immich server URL opens in a browser on the same Mac.</li>
+              <li><span data-i18n="support.before.item.origin">Use the complete server origin, including </span><code>https://</code><span data-i18n="support.before.item.origin.suffix"> when TLS is configured.</span></li>
+              <li data-i18n="support.before.item.account">Check that the Immich account can sign in and that the server is reachable from the current network.</li>
+              <li data-i18n="support.before.item.update">Update ImmiMate and Immich before reporting a compatibility problem.</li>
             </ol>
 
-            <div class="notice"><strong>Please protect your account.</strong> Never include passwords, API keys, private server URLs, or personal photos in a support issue. Redact logs before sharing them.</div>
+            <div class="notice"><strong data-i18n="support.notice.strong">Please protect your account.</strong> <span data-i18n="support.notice.body">Never include passwords, API keys, private server URLs, or personal photos in a support issue. Redact logs before sharing them.</span></div>
 
-            <h2>What to include</h2>
+            <h2 data-i18n="support.include.title">What to include</h2>
             <ul>
-              <li>ImmiMate version and macOS version.</li>
-              <li>Immich server version, if known.</li>
-              <li>The screen or action where the problem occurred.</li>
-              <li>A redacted error message and clear steps to reproduce.</li>
+              <li data-i18n="support.include.item.version">ImmiMate version and macOS version.</li>
+              <li data-i18n="support.include.item.server">Immich server version, if known.</li>
+              <li data-i18n="support.include.item.screen">The screen or action where the problem occurred.</li>
+              <li data-i18n="support.include.item.reproduce">A redacted error message and clear steps to reproduce.</li>
             </ul>
 
-            <h2>Still stuck?</h2>
-            <p>Open an issue with the details above. A short screen recording or a redacted screenshot can help explain a layout or interaction problem, but never upload private media or credentials.</p>
-            <a class="text-link" href="https://github.com/skybit/immimate-site/issues">Go to the public support tracker <span aria-hidden="true">→</span></a>
+            <h2 data-i18n="support.stuck.title">Still stuck?</h2>
+            <p data-i18n="support.stuck.p">Open an issue with the details above. A short screen recording or a redacted screenshot can help explain a layout or interaction problem, but never upload private media or credentials.</p>
+            <a class="text-link" href="https://github.com/skybit/immimate-site/issues"><span data-i18n="support.stuck.link">Go to the public support tracker</span> <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </section>
@@ -65,8 +66,8 @@
     <footer>
       <div class="wrap footer-row">
         <a class="footer-brand" href="../"><img src="../assets/app-icon.png" alt="" width="24" height="24"> ImmiMate</a>
-        <span>© 2026 ImmiMate</span>
-        <span><a href="../">Home</a> · <a href="../privacy/">Privacy</a></span>
+        <span data-i18n="common.footer.copyright">© 2026 ImmiMate</span>
+        <span><a href="../" data-i18n="common.footer.home">Home</a> · <a href="../privacy/" data-i18n="common.nav.privacy">Privacy</a></span>
       </div>
     </footer>
   </body>

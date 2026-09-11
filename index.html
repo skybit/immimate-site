@@ -4,23 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f7f8fb">
-    <meta name="description" content="ImmiMate is a calm, native macOS client for self-hosted Immich photo libraries.">
-    <title>ImmiMate — Your photo library, at home</title>
+    <meta name="description" content="ImmiMate is a calm, native macOS client for self-hosted Immich photo libraries." data-i18n="home.meta.description" data-i18n-attr="content">
+    <title data-i18n="home.meta.title">ImmiMate — Your photo library, at home</title>
     <link rel="icon" href="assets/app-icon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <script src="assets/i18n.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="wrap nav">
-        <a class="brand" href="./" aria-label="ImmiMate home">
+        <a class="brand" href="./" aria-label="ImmiMate home" data-i18n="common.home.aria" data-i18n-attr="aria-label">
           <img src="assets/app-icon.png" alt="" width="34" height="34">
           <span>ImmiMate</span>
         </a>
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#features">Product</a>
-          <a href="#screenshots">Screenshots</a>
-          <a href="privacy/">Privacy</a>
-          <a class="nav-cta" href="support/">Support</a>
+        <nav class="nav-links" aria-label="Primary navigation" data-i18n="common.nav.primary" data-i18n-attr="aria-label">
+          <a href="#features" data-i18n="common.nav.product">Product</a>
+          <a href="#screenshots" data-i18n="common.nav.screenshots">Screenshots</a>
+          <a href="privacy/" data-i18n="common.nav.privacy">Privacy</a>
+          <a class="nav-cta" href="support/" data-i18n="common.nav.support">Support</a>
         </nav>
       </div>
     </header>
@@ -29,16 +30,16 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="hero-copy">
-            <p class="kicker"><span class="kicker-mark"></span> Native macOS client for self-hosted Immich</p>
-            <h1>Your photo library, <em>at home.</em></h1>
-            <p class="hero-lead">ImmiMate gives your Immich library a focused desktop home for browsing, searching, sharing, uploading, and keeping a quiet local backup.</p>
+            <p class="kicker"><span class="kicker-mark"></span> <span data-i18n="home.hero.kicker">Native macOS client for self-hosted Immich</span></p>
+            <h1><span data-i18n="home.hero.title.main">Your photo library,</span> <em data-i18n="home.hero.title.em">at home.</em></h1>
+            <p class="hero-lead" data-i18n="home.hero.lead">ImmiMate gives your Immich library a focused desktop home for browsing, searching, sharing, uploading, and keeping a quiet local backup.</p>
             <div class="actions">
-              <a class="button" href="#screenshots">See the workflow <span aria-hidden="true">↘</span></a>
-              <a class="button button-secondary" href="support/">Get support</a>
+              <a class="button" href="#screenshots"><span data-i18n="home.hero.workflow">See the workflow</span> <span aria-hidden="true">↘</span></a>
+              <a class="button button-secondary" href="support/" data-i18n="home.hero.support">Get support</a>
             </div>
-            <div class="hero-notes" aria-label="Product highlights">
-              <span><i aria-hidden="true">✓</i> Connect directly to your server</span>
-              <span><i aria-hidden="true">✓</i> Credentials stay in macOS Keychain</span>
+            <div class="hero-notes" aria-label="Product highlights" data-i18n="home.hero.notes" data-i18n-attr="aria-label">
+              <span><i aria-hidden="true">✓</i> <span data-i18n="home.hero.note.server">Connect directly to your server</span></span>
+              <span><i aria-hidden="true">✓</i> <span data-i18n="home.hero.note.keychain">Credentials stay in macOS Keychain</span></span>
             </div>
           </div>
 
@@ -46,58 +47,58 @@
             <div class="window-card">
               <div class="window-toolbar">
                 <div class="traffic-lights" aria-hidden="true"><span></span><span></span><span></span></div>
-                <span class="window-title">ImmiMate <b>·</b> Photos</span>
-                <span class="window-status"><i></i> Library connected</span>
+                <span class="window-title">ImmiMate <b>·</b> <span data-i18n="home.visual.photos">Photos</span></span>
+                <span class="window-status"><i></i> <span data-i18n="home.visual.status">Library connected</span></span>
               </div>
               <div class="window-image">
-                <img src="assets/screenshots/search.png" alt="ImmiMate Photos screen with Smart Search open" width="1280" height="800">
+                <img src="assets/screenshots/search.png" alt="ImmiMate Photos screen with Smart Search open" data-i18n="home.visual.hero.alt" data-i18n-attr="alt" width="1280" height="800">
               </div>
             </div>
             <div class="floating-card floating-card-search">
               <span class="floating-icon">⌕</span>
-              <span><strong>Search with context</strong><small>Filename · Description · OCR</small></span>
+              <span><strong data-i18n="home.visual.search.strong">Search with context</strong><small data-i18n="home.visual.search.small">Filename · Description · OCR</small></span>
             </div>
             <div class="floating-card floating-card-native">
               <span class="native-dot"></span>
-              <span><strong>Made for the Mac</strong><small>Fast, quiet, familiar</small></span>
+              <span><strong data-i18n="home.visual.native.strong">Made for the Mac</strong><small data-i18n="home.visual.native.small">Fast, quiet, familiar</small></span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="signal-strip" aria-label="Product principles">
+      <section class="signal-strip" aria-label="Product principles" data-i18n="home.principles.aria" data-i18n-attr="aria-label">
         <div class="wrap signal-grid">
-          <div><span class="signal-number">01</span><strong>Direct by default</strong><small>No developer relay for your media.</small></div>
-          <div><span class="signal-number">02</span><strong>Native by design</strong><small>File selection, drag-and-drop, Keychain.</small></div>
-          <div><span class="signal-number">03</span><strong>Built to stay calm</strong><small>Organize without another noisy dashboard.</small></div>
+          <div><span class="signal-number">01</span><strong data-i18n="home.principles.direct.title">Direct by default</strong><small data-i18n="home.principles.direct.body">No developer relay for your media.</small></div>
+          <div><span class="signal-number">02</span><strong data-i18n="home.principles.native.title">Native by design</strong><small data-i18n="home.principles.native.body">File selection, drag-and-drop, Keychain.</small></div>
+          <div><span class="signal-number">03</span><strong data-i18n="home.principles.calm.title">Built to stay calm</strong><small data-i18n="home.principles.calm.body">Organize without another noisy dashboard.</small></div>
         </div>
       </section>
 
       <section class="section" id="features">
         <div class="wrap">
           <div class="section-heading">
-            <p class="kicker">One focused desktop workflow</p>
-            <h2>Less hunting. More time with the photos.</h2>
-            <p>ImmiMate brings the everyday Immich tasks you actually use into a clean macOS workspace.</p>
+            <p class="kicker" data-i18n="home.features.kicker">One focused desktop workflow</p>
+            <h2 data-i18n="home.features.title">Less hunting. More time with the photos.</h2>
+            <p data-i18n="home.features.lead">ImmiMate brings the everyday Immich tasks you actually use into a clean macOS workspace.</p>
           </div>
           <div class="feature-grid">
             <article class="feature-card">
               <div class="feature-top"><span class="feature-index">01</span><span class="feature-glyph" aria-hidden="true">⌕</span></div>
-              <h3>Find the right moment</h3>
-              <p>Browse your timeline, albums, favorites, shared items, and trash. Search by filename, description, or OCR.</p>
-              <a href="#screenshots">Explore search <span aria-hidden="true">→</span></a>
+              <h3 data-i18n="home.feature.find.title">Find the right moment</h3>
+              <p data-i18n="home.feature.find.body">Browse your timeline, albums, favorites, shared items, and trash. Search by filename, description, or OCR.</p>
+              <a href="#screenshots"><span data-i18n="home.feature.find.link">Explore search</span> <span aria-hidden="true">→</span></a>
             </article>
             <article class="feature-card feature-card-accent">
               <div class="feature-top"><span class="feature-index">02</span><span class="feature-glyph" aria-hidden="true">↑</span></div>
-              <h3>Move media with confidence</h3>
-              <p>Upload photos, videos, folders, and ZIP packages with progress and duplicate checks. Download originals to a folder you choose.</p>
-              <a href="#screenshots">See transfer tools <span aria-hidden="true">→</span></a>
+              <h3 data-i18n="home.feature.transfer.title">Move media with confidence</h3>
+              <p data-i18n="home.feature.transfer.body">Upload photos, videos, folders, and ZIP packages with progress and duplicate checks. Download originals to a folder you choose.</p>
+              <a href="#screenshots"><span data-i18n="home.feature.transfer.link">See transfer tools</span> <span aria-hidden="true">→</span></a>
             </article>
             <article class="feature-card">
               <div class="feature-top"><span class="feature-index">03</span><span class="feature-glyph" aria-hidden="true">⌂</span></div>
-              <h3>Keep a quiet backup</h3>
-              <p>Monitor selected local folders, switch between server profiles, and keep your own archive close to the Mac you use every day.</p>
-              <a href="support/">Read support notes <span aria-hidden="true">→</span></a>
+              <h3 data-i18n="home.feature.backup.title">Keep a quiet backup</h3>
+              <p data-i18n="home.feature.backup.body">Monitor selected local folders, switch between server profiles, and keep your own archive close to the Mac you use every day.</p>
+              <a href="support/"><span data-i18n="home.feature.backup.link">Read support notes</span> <span aria-hidden="true">→</span></a>
             </article>
           </div>
         </div>
@@ -107,69 +108,69 @@
         <div class="wrap">
           <div class="section-heading gallery-heading">
             <div>
-              <p class="kicker">Inside ImmiMate</p>
-              <h2>A photo workspace that gets out of the way.</h2>
+              <p class="kicker" data-i18n="home.gallery.kicker">Inside ImmiMate</p>
+              <h2 data-i18n="home.gallery.title">A photo workspace that gets out of the way.</h2>
             </div>
-            <p>From a quick search to a full import, the interface keeps the library in view and the action close at hand.</p>
+            <p data-i18n="home.gallery.lead">From a quick search to a full import, the interface keeps the library in view and the action close at hand.</p>
           </div>
           <div class="screenshot-grid">
             <figure class="shot shot-wide">
-              <div class="shot-image"><img src="assets/screenshots/library.png" alt="ImmiMate Photos library with a real photo timeline" width="1280" height="800" loading="lazy"></div>
-              <figcaption><span>Photos</span><strong>Keep the whole library in view.</strong><small>Browse a real photo timeline from the first screen.</small></figcaption>
+              <div class="shot-image"><img src="assets/screenshots/library.png" alt="ImmiMate Photos library with a real photo timeline" data-i18n="home.gallery.library.alt" data-i18n-attr="alt" width="1280" height="800" loading="lazy"></div>
+              <figcaption><span data-i18n="home.gallery.library.label">Photos</span><strong data-i18n="home.gallery.library.title">Keep the whole library in view.</strong><small data-i18n="home.gallery.library.body">Browse a real photo timeline from the first screen.</small></figcaption>
             </figure>
             <figure class="shot">
-              <div class="shot-image"><img src="assets/screenshots/asset-detail-filmstrip.png" alt="ImmiMate image detail viewer with the bottom filmstrip expanded" width="1280" height="800" loading="lazy"></div>
-              <figcaption><span>Detail</span><strong>Move through the moments around it.</strong><small>Expand the bottom filmstrip to switch between adjacent assets without leaving the viewer.</small></figcaption>
+              <div class="shot-image"><img src="assets/screenshots/asset-detail-filmstrip.png" alt="ImmiMate image detail viewer with the bottom filmstrip expanded" data-i18n="home.gallery.detail.alt" data-i18n-attr="alt" width="1280" height="800" loading="lazy"></div>
+              <figcaption><span data-i18n="home.gallery.detail.label">Detail</span><strong data-i18n="home.gallery.detail.title">Move through the moments around it.</strong><small data-i18n="home.gallery.detail.body">Expand the bottom filmstrip to switch between adjacent assets without leaving the viewer.</small></figcaption>
             </figure>
             <figure class="shot">
-              <div class="shot-image"><img src="assets/screenshots/albums.png" alt="ImmiMate Albums view with real albums" width="1280" height="800" loading="lazy"></div>
-              <figcaption><span>Albums</span><strong>Give every story a place.</strong><small>Search, filter, and create albums without leaving the desktop workspace.</small></figcaption>
+              <div class="shot-image"><img src="assets/screenshots/albums.png" alt="ImmiMate Albums view with real albums" data-i18n="home.gallery.albums.alt" data-i18n-attr="alt" width="1280" height="800" loading="lazy"></div>
+              <figcaption><span data-i18n="home.gallery.albums.label">Albums</span><strong data-i18n="home.gallery.albums.title">Give every story a place.</strong><small data-i18n="home.gallery.albums.body">Search, filter, and create albums without leaving the desktop workspace.</small></figcaption>
             </figure>
             <figure class="shot">
-              <div class="shot-image"><img src="assets/screenshots/favorites.png" alt="ImmiMate Favorites view" width="1280" height="800" loading="lazy"></div>
-              <figcaption><span>Favorites</span><strong>Make the good stuff easy to return to.</strong><small>A focused view for the moments you marked to keep close.</small></figcaption>
+              <div class="shot-image"><img src="assets/screenshots/favorites.png" alt="ImmiMate Favorites view" data-i18n="home.gallery.favorites.alt" data-i18n-attr="alt" width="1280" height="800" loading="lazy"></div>
+              <figcaption><span data-i18n="home.gallery.favorites.label">Favorites</span><strong data-i18n="home.gallery.favorites.title">Make the good stuff easy to return to.</strong><small data-i18n="home.gallery.favorites.body">A focused view for the moments you marked to keep close.</small></figcaption>
             </figure>
             <figure class="shot">
-              <div class="shot-image"><img src="assets/screenshots/shared.png" alt="ImmiMate Shared albums view" width="1280" height="800" loading="lazy"></div>
-              <figcaption><span>Shared</span><strong>Keep shared albums in the same rhythm.</strong><small>See friends, albums, and shared collections without leaving the app.</small></figcaption>
+              <div class="shot-image"><img src="assets/screenshots/shared.png" alt="ImmiMate Shared albums view" data-i18n="home.gallery.shared.alt" data-i18n-attr="alt" width="1280" height="800" loading="lazy"></div>
+              <figcaption><span data-i18n="home.gallery.shared.label">Shared</span><strong data-i18n="home.gallery.shared.title">Keep shared albums in the same rhythm.</strong><small data-i18n="home.gallery.shared.body">See friends, albums, and shared collections without leaving the app.</small></figcaption>
             </figure>
             <figure class="shot">
-              <div class="shot-image"><img src="assets/screenshots/import.png" alt="ImmiMate removable media import wizard" width="1280" height="800" loading="lazy"></div>
-              <figcaption><span>Import</span><strong>Bring in camera media with a clear path.</strong><small>Use the guided flow for SD cards, cameras, and removable drives.</small></figcaption>
+              <div class="shot-image"><img src="assets/screenshots/import.png" alt="ImmiMate removable media import wizard" data-i18n="home.gallery.import.alt" data-i18n-attr="alt" width="1280" height="800" loading="lazy"></div>
+              <figcaption><span data-i18n="home.gallery.import.label">Import</span><strong data-i18n="home.gallery.import.title">Bring in camera media with a clear path.</strong><small data-i18n="home.gallery.import.body">Use the guided flow for SD cards, cameras, and removable drives.</small></figcaption>
             </figure>
             <figure class="shot">
-              <div class="shot-image"><img src="assets/screenshots/trash.png" alt="ImmiMate Trash view" width="1280" height="800" loading="lazy"></div>
-              <figcaption><span>Trash</span><strong>Keep recovery close at hand.</strong><small>Review retention and restore or empty deleted media from one place.</small></figcaption>
+              <div class="shot-image"><img src="assets/screenshots/trash.png" alt="ImmiMate Trash view" data-i18n="home.gallery.trash.alt" data-i18n-attr="alt" width="1280" height="800" loading="lazy"></div>
+              <figcaption><span data-i18n="home.gallery.trash.label">Trash</span><strong data-i18n="home.gallery.trash.title">Keep recovery close at hand.</strong><small data-i18n="home.gallery.trash.body">Review retention and restore or empty deleted media from one place.</small></figcaption>
             </figure>
             <figure class="shot">
-              <div class="shot-image"><img src="assets/screenshots/settings.png" alt="ImmiMate Settings with multi-server and language controls" width="1280" height="800" loading="lazy"></div>
-              <figcaption><span>Settings</span><strong>Shape the client around your server.</strong><small>Choose a download location, switch server nodes, and tune language and tray behavior.</small></figcaption>
+              <div class="shot-image"><img src="assets/screenshots/settings.png" alt="ImmiMate Settings with multi-server and language controls" data-i18n="home.gallery.settings.alt" data-i18n-attr="alt" width="1280" height="800" loading="lazy"></div>
+              <figcaption><span data-i18n="home.gallery.settings.label">Settings</span><strong data-i18n="home.gallery.settings.title">Shape the client around your server.</strong><small data-i18n="home.gallery.settings.body">Choose a download location, switch server nodes, and tune language and tray behavior.</small></figcaption>
             </figure>
             <figure class="shot">
-              <div class="shot-image"><img src="assets/screenshots/search.png" alt="ImmiMate Smart Search menu over a photo timeline" width="1280" height="800" loading="lazy"></div>
-              <figcaption><span>Search</span><strong>Look beyond filenames.</strong><small>Smart Search keeps filename, description, and OCR in one place.</small></figcaption>
+              <div class="shot-image"><img src="assets/screenshots/search.png" alt="ImmiMate Smart Search menu over a photo timeline" data-i18n="home.gallery.search.alt" data-i18n-attr="alt" width="1280" height="800" loading="lazy"></div>
+              <figcaption><span data-i18n="home.gallery.search.label">Search</span><strong data-i18n="home.gallery.search.title">Look beyond filenames.</strong><small data-i18n="home.gallery.search.body">Smart Search keeps filename, description, and OCR in one place.</small></figcaption>
             </figure>
             <figure class="shot shot-wide">
-              <div class="shot-image"><img src="assets/screenshots/uploads.png" alt="ImmiMate Upload Center popover" width="1280" height="800" loading="lazy"></div>
-              <figcaption><span>Transfers</span><strong>See every upload at a glance.</strong><small>Keep pending work, progress, and completed tasks visible.</small></figcaption>
+              <div class="shot-image"><img src="assets/screenshots/uploads.png" alt="ImmiMate Upload Center popover" data-i18n="home.gallery.uploads.alt" data-i18n-attr="alt" width="1280" height="800" loading="lazy"></div>
+              <figcaption><span data-i18n="home.gallery.uploads.label">Transfers</span><strong data-i18n="home.gallery.uploads.title">See every upload at a glance.</strong><small data-i18n="home.gallery.uploads.body">Keep pending work, progress, and completed tasks visible.</small></figcaption>
             </figure>
           </div>
-          <p class="source-note"><span aria-hidden="true">✦</span> All ten product captures come from the current macOS Release build connected to the official Immich Demo. No local mock data or edited screenshots are used.</p>
+          <p class="source-note"><span aria-hidden="true">✦</span> <span data-i18n="home.gallery.source">All ten product captures come from the current macOS Release build connected to the official Immich Demo. No local mock data or edited screenshots are used.</span></p>
         </div>
       </section>
 
       <section class="section privacy-section">
         <div class="wrap privacy-grid">
           <div>
-            <p class="kicker kicker-light">Privacy by design</p>
-            <h2>Your server. Your library. Your call.</h2>
-            <p>ImmiMate is an independent client. Your photos, videos, server URL, and credentials move between your Mac and the Immich server you choose. There is no developer relay, advertising system, or behavioral tracking system.</p>
-            <a class="text-link text-link-light" href="privacy/">Read the privacy policy <span aria-hidden="true">→</span></a>
+            <p class="kicker kicker-light" data-i18n="home.privacy.kicker">Privacy by design</p>
+            <h2 data-i18n="home.privacy.title">Your server. Your library. Your call.</h2>
+            <p data-i18n="home.privacy.body">ImmiMate is an independent client. Your photos, videos, server URL, and credentials move between your Mac and the Immich server you choose. There is no developer relay, advertising system, or behavioral tracking system.</p>
+            <a class="text-link text-link-light" href="privacy/"><span data-i18n="home.privacy.link">Read the privacy policy</span> <span aria-hidden="true">→</span></a>
           </div>
           <div class="privacy-list">
-            <div><span>01</span><p><strong>Direct connection</strong><br>Requests and media go to the server you provide.</p></div>
-            <div><span>02</span><p><strong>Keychain storage</strong><br>Server credentials use macOS Keychain protection.</p></div>
-            <div><span>03</span><p><strong>Local control</strong><br>Folder access and permissions stay under your control.</p></div>
+            <div><span>01</span><p><strong data-i18n="home.privacy.direct.title">Direct connection</strong><br><span data-i18n="home.privacy.direct.body">Requests and media go to the server you provide.</span></p></div>
+            <div><span>02</span><p><strong data-i18n="home.privacy.keychain.title">Keychain storage</strong><br><span data-i18n="home.privacy.keychain.body">Server credentials use macOS Keychain protection.</span></p></div>
+            <div><span>03</span><p><strong data-i18n="home.privacy.local.title">Local control</strong><br><span data-i18n="home.privacy.local.body">Folder access and permissions stay under your control.</span></p></div>
           </div>
         </div>
       </section>
@@ -177,12 +178,12 @@
       <section class="section closing-section">
         <div class="wrap closing-card">
           <div>
-            <p class="kicker">Ready when you are</p>
-            <h2>Make your Immich library feel at home on macOS.</h2>
+            <p class="kicker" data-i18n="home.closing.kicker">Ready when you are</p>
+            <h2 data-i18n="home.closing.title">Make your Immich library feel at home on macOS.</h2>
           </div>
           <div class="closing-actions">
-            <a class="button" href="support/">Visit support <span aria-hidden="true">→</span></a>
-            <a class="text-link" href="privacy/">Privacy policy</a>
+            <a class="button" href="support/"><span data-i18n="home.closing.support">Visit support</span> <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="privacy/" data-i18n="home.closing.privacy">Privacy policy</a>
           </div>
         </div>
       </section>
@@ -191,8 +192,8 @@
     <footer>
       <div class="wrap footer-row">
         <a class="footer-brand" href="./"><img src="assets/app-icon.png" alt="" width="24" height="24"> ImmiMate</a>
-        <span>© 2026 ImmiMate · Independent third-party software for Immich.</span>
-        <span><a href="privacy/">Privacy</a> · <a href="support/">Support</a></span>
+        <span data-i18n="common.footer.independent">© 2026 ImmiMate · Independent third-party software for Immich.</span>
+        <span><a href="privacy/" data-i18n="common.nav.privacy">Privacy</a> · <a href="support/" data-i18n="common.nav.support">Support</a></span>
       </div>
     </footer>
   </body>
