@@ -360,4 +360,14 @@
       element.textContent = value;
     }
   });
+
+  // Marketing screenshots have localized UI chrome. Keep the English files
+  // as the default source and swap to the Simplified Chinese capture when
+  // the browser language selects the Chinese dictionary.
+  if (locale === 'zh') {
+    document.querySelectorAll('[data-i18n-zh-src]').forEach(element => {
+      const source = element.getAttribute('data-i18n-zh-src');
+      if (source) element.setAttribute('src', source);
+    });
+  }
 })();
