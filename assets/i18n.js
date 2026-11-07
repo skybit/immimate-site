@@ -342,8 +342,30 @@
     ...(Array.isArray(navigator.languages) ? navigator.languages : []),
     navigator.language,
   ].filter(Boolean);
-  const preferredLanguage = browserLanguages.find(language => /^(?:zh(?:-|$)|en(?:-|$))/i.test(language)) || 'en';
-  const locale = /^zh(?:-|$)/i.test(preferredLanguage) ? 'zh' : 'en';
+  const screenshotLocaleByLanguage = new Map([
+    ['de', 'de-DE'],
+    ['en', 'en-US'],
+    ['es', 'es-ES'],
+    ['fr', 'fr-FR'],
+    ['it', 'it-IT'],
+    ['ja', 'ja-JP'],
+    ['ko', 'ko-KR'],
+    ['pt', 'pt-BR'],
+  ]);
+  const getScreenshotLocale = language => {
+    const normalizedLanguage = language.toLowerCase().replace(/_/g, '-');
+    if (/^zh(?:-|$)/i.test(normalizedLanguage)) {
+      return /(?:^|-)(?:tw|hk|mo|hant)(?:-|$)/i.test(normalizedLanguage)
+        ? 'zh-TW'
+        : 'zh-CN';
+    }
+
+    return screenshotLocaleByLanguage.get(normalizedLanguage.split('-')[0]);
+  };
+  const screenshotLocale = browserLanguages
+    .map(getScreenshotLocale)
+    .find(Boolean) || 'en-US';
+  const locale = screenshotLocale.startsWith('zh-') ? 'zh' : 'en';
   const dictionary = translations[locale];
 
   document.documentElement.lang = locale === 'zh' ? 'zh-CN' : 'en';
@@ -361,13 +383,15 @@
     }
   });
 
-  // Marketing screenshots have localized UI chrome. Keep the English files
-  // as the default source and swap to the Simplified Chinese capture when
-  // the browser language selects the Chinese dictionary.
-  if (locale === 'zh') {
-    document.querySelectorAll('[data-i18n-zh-src]').forEach(element => {
-      const source = element.getAttribute('data-i18n-zh-src');
-      if (source) element.setAttribute('src', source);
-    });
-  }
+  // The site copy is English or Simplified Chinese; screenshots follow the
+  // closest supported app locale selected by the visitor's browser.
+  document.querySelectorAll('img[src^="assets/screenshots/"]').forEach(element => {
+    const fileName = (element.getAttribute('src') || '').split('/').pop();
+    if (!fileName) return;
+
+    const source = screenshotLocale === 'en-US'
+      ? 'assets/screenshots/' + fileName
+      : 'assets/screenshots/' + screenshotLocale + '/' + fileName;
+    element.setAttribute('src', source);
+  });
 })();
